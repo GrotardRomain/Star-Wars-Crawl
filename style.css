@@ -1,0 +1,120 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(starwars.png);
+    margin: 0;
+    overflow: hidden; /* Evite la scrollbar */
+
+    /* pour centrer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.becode {
+    /* Animation */
+    /* Apparition et disparition */
+    opacity: 0;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-name: becode;
+    animation-timing-function: ease-out;
+    text-align: center;
+}
+
+@keyframes becode {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.debut {
+    /* texte début */
+    font-size: 32px;
+    color: #4bd5ee;
+    /* Animation */
+    /* Apparition et disparition */
+    opacity: 0;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-name: debut;
+    animation-timing-function: ease-out;
+    text-align: center;
+}
+
+@keyframes debut {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.crawl {
+    /* centrage de l'élément' */
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 1000px;
+    margin: 0 0 0 -500px;
+    top: auto;
+    bottom: 0;
+    height: 50em;
+    /* couleur du texte, taille, etc */
+    color: #ffff66;
+    font-size: 64px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: justify;
+    /* Applique la transformation  */
+    transform-origin: center bottom;
+    transform: perspective(300px) rotateX(25deg);
+}
+
+.crawl  div {
+    /* permet de positionner le div en dehors de l'ecran */
+    /* animation pour fair remonter le texte */
+    position: absolute;
+    top: 100%;
+    animation-delay: 6s; /* le temps pour démarrer l'animation après la première */
+    animation-duration: 40s;
+    animation-name: crawl;
+    animation-timing-function: linear;
+}
+
+@keyframes crawl {
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1; /* disparition progressive à la fin */
+    }
+
+    100% {
+        top: 0;
+        opacity: 0;
+    }
+}
