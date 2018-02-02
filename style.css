@@ -7,7 +7,7 @@ body {
     overflow: hidden; /* Evite la scrollbar */
 
     /* pour centrer */
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
 }
@@ -15,11 +15,12 @@ body {
     /* Animation */
     /* Apparition et disparition */
     opacity: 0;
-    animation-delay: 4s;
+    animation-delay: 5s;
     animation-duration: 2s;
     animation-name: becode;
     animation-timing-function: ease-out;
     text-align: center;
+    margin-top: -150px;
 }
 
 @keyframes becode {
@@ -52,6 +53,7 @@ body {
     animation-name: debut;
     animation-timing-function: ease-out;
     text-align: center;
+    margin-top: 500px;
 }
 
 @keyframes debut {
